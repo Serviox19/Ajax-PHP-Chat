@@ -1,4 +1,9 @@
 <?php include 'database.php'; ?>
+<?php
+    //Query database for all chats!
+    $query = "SELECT * FROM shouts ORDER BY id DESC";
+    $chats = mysqli_query($con, $query);
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +21,9 @@
       </header>
       <div id="chats">
         <ul>
-          <li></li>
+          <?php while ($row = mysqli_fetch_assoc($chats)) : ?>
+          <li><?php echo $row['name']; ?>: <?php echo $row['$chat']; ?> [<?php echo $row['date']; ?>]</li>
+        <?php endwhile; ?>
         </ul>
       </div>
       <div id="newChat">

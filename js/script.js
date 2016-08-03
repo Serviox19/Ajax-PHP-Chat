@@ -26,6 +26,7 @@ $(document).ready(function(){
   });
 });
 
+//date fuction and formatter
 function getDate() {
   var date;
   date = new Date;
