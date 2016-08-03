@@ -20,11 +20,11 @@
         </ul>
       </div>
       <div id="newChat">
-        <form class="" action="index.html" method="post">
+        <form>
           <label>Name: </label>
           <input type="text" id="name">
           <label>Message Text: </label>
-          <input type="text" id="chats">
+          <input type="text" id="message">
           <input type="submit" id="submit" value="Chat">
         </form>
       </div>
