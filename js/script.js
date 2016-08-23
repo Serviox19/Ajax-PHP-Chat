@@ -16,6 +16,8 @@ $(document).ready(function(){
           cache: false,
           success: function (html) {
             $('#chats ul').prepend(html);
+            $('#name').val('');
+            $('#message').val('');
           }
         })
       }

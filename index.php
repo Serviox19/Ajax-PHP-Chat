@@ -10,6 +10,7 @@
     <meta charset="utf-8">
     <title>Ajax Chat</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </head>
@@ -27,12 +28,16 @@
         </ul>
       </div>
       <div id="newChat">
-        <form>
-          <label>Name: </label>
-          <input type="text" id="name">
-          <label>Message Text: </label>
-          <input type="text" id="message">
-          <input type="submit" id="submit" value="Chat">
+        <form class="form-inline">
+          <div class="form-group">
+            <label>Name: </label>
+            <input type="text" class="form-control" placeholder="Your Name" id="name">
+          </div>
+          <div class="form-group">
+            <label>Message Text: </label>
+            <input type="text" class="form-control" placeholder="Type Message" id="message">
+          </div>
+          <input type="submit" class="btn btn-primary" id="submit" value="Chat">
         </form>
       </div>
     </div>

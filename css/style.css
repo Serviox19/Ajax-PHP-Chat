@@ -1,0 +1,47 @@
+.container {
+  /*border: 3px solid green;*/
+}
+
+header h1 {
+  text-align: center;
+}
+
+#chats {
+  display: block;
+  margin: auto;
+  width: 50%;
+  background-color: #F5F5F5;
+  padding: 25px 10px;
+  max-height: 350px;
+  overflow: auto;
+  border: 3px solid black;
+}
+
+#newChat {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#newChat form {
+
+}
+
+.btn-primary {
+  height: 30px;
+  line-height: 30px;
+}
+
+.form-inline .form-control {
+  height: 30px;
+}
+
+.form-group {
+  padding-right: 10px;
+}
+
+.form-group label {
+  padding-right: 5px;
+}
