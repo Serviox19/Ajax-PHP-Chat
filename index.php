@@ -23,8 +23,8 @@
       <div id="chats">
         <ul>
           <?php while ($row = mysqli_fetch_assoc($chats)) : ?>
-          <li><?php echo $row['name']; ?>: <?php echo $row['shout']; ?> [<?php echo $row['date']; ?>]</li>
-        <?php endwhile; ?>
+            <li><span id="chatName"><?php echo $row['name'] ?></span><span id="chatDate">(<?php echo $row['date']; ?>):</span> <span id="chatMessage"><?php echo $row['shout']; ?></span></li>
+          <?php endwhile; ?>
         </ul>
       </div>
       <div id="newChat">
